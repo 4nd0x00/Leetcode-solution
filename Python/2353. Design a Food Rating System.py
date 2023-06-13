@@ -1,6 +1,6 @@
 from collections import defaultdict
+from typing import List
 import heapq
-
 
 # FoodRatings object will be instantiated and called as such:
 # obj = FoodRatings(foods, cuisines, ratings)
