@@ -40,17 +40,17 @@ public:
 };
 */
 
-    bool check_value(vector<vector<int>>& grid, int x, int y, int n){
-        int m = n, val = grid[y][x];
-        for(int i = y; i < y + n; i++){
-            for(int j = x; j < x + n; j++){
-                if(grid[i][j] != val){
-                    return false;
-                }
+bool check_value(vector<vector<int>>& grid, int x, int y, int n){
+    int m = n, val = grid[y][x];
+    for(int i = y; i < y + n; i++){
+        for(int j = x; j < x + n; j++){
+            if(grid[i][j] != val){
+                return false;
             }
         }
-        return true;
     }
+    return true;
+}
     
 Node* helper(vector<vector<int>>& grid, int x, int y, int n) {
     Node* root = new Node(true, false);
