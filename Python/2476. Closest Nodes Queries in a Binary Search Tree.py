@@ -1,4 +1,4 @@
-import bisect
+from bisect import bisect_left
 
 def closestNodes(self, root, queries):
     def helper(root) :
