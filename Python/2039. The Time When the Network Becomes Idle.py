@@ -2,7 +2,7 @@ from typing import List
 import math
 
 
-def networkBecomesIdle(self, edges: List[List[int]], patience: List[int]) -> int:
+def networkBecomesIdle(edges: List[List[int]], patience: List[int]) -> int:
     adj = {}
     N = len(patience)
     for u, v in edges:
