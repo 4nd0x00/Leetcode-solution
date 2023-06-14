@@ -1,7 +1,7 @@
 from typing import List
 
 
-# Your SnapshotArray object will be instantiated and called as such:
+# SnapshotArray object will be instantiated and called as such:
 # obj = SnapshotArray(length)
 # obj.set(index,val)
 # param_2 = obj.snap()
@@ -17,8 +17,10 @@ class SnapshotArray:
 
     def set(self, index: int, val: int) -> None:
         curr = self._snap[index]
-        if self._snap_id >= len(curr): curr.append([self._snap_id, val])
-        else: curr[self._snap_id][1] = val
+        if self._snap_id >= len(curr): 
+            curr.append([self._snap_id, val])
+        else: 
+            curr[self._snap_id][1] = val
 
 
     def snap(self) -> int:
